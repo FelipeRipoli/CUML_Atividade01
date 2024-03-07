@@ -14,17 +14,20 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/atividade01', function () {
-    return view('restaurante');
+    return view('pedido');
 });
 
 Route::get('/cliente', function(){
+    return view('cliente');
     echo 'Olá, Cliente!';
 })->name('cliente');
 
 Route::get('/pedido', function(){
+    return view('pedido');
     echo 'Pedido n° 01 está pronto!';
 })->name('pedido');
 
 Route::get('/produto', function(){
+    return view('produto');
     echo 'Pedido é Macarrão.';
 })->name('produto');
